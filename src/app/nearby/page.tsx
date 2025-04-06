@@ -66,7 +66,8 @@ export default function NearbyPage() {
       if (error) {
         setError('Failed to fetch nearby users.')
       } else {
-        //console.log(data);
+        
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const formatted = data.map((user: any) => ({
           ...user
         }))
