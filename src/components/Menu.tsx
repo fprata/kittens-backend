@@ -1,12 +1,12 @@
 export default function Menu() {
   return (
-    <aside
-      id="sidebar"
-      className="hidden md:flex flex-col h-screen bg-white shadow dark:bg-dark2 2xl:w-72 xl:w-60 w-[73px]"
-    >
+    // <aside
+    //   id="sidebar"
+    //   className="hidden md:flex flex-col h-screen bg-white shadow dark:bg-dark2 2xl:w-72 xl:w-60 w-[73px]"
+    // >
       <div
         id="sidebar"
-        className="fixed top-0 left-0 z-40 max-md:top-auto max-md:bottom-0"
+        className="fixed top-0 left-0 z-[9999] max-md:top-auto max-md:bottom-0"
       >
         <div
           id="sidebar__inner"
@@ -975,6 +975,6 @@ export default function Menu() {
           </nav>
         </div>
       </div>
-    </aside>
+    //</aside>
   );
 }
