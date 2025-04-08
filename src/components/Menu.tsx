@@ -15,18 +15,24 @@ export default function Menu() {
           <Link href="/" id="logo" className="flex items-center gap-3">
             <Image
               id="logo__icon"
+              width={32} // or any appropriate size
+              height={32}
               src="/assets/images/logo-icon.png"
               alt=""
               className="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up"
             />
             <Image
               id="logo__text"
+              width={32} // or any appropriate size
+              height={32}              
               src="/assets/images/logo.svg"
               alt=""
               className="w-full h-6 ml-1 max-xl:hidden max-md:block dark:!hidden"
             />
             <Image
               id="logo__text-dark"
+              width={32} // or any appropriate size
+              height={32}              
               src="/assets/images/logo-dark.svg"
               alt=""
               className="w-full h-6 ml-1 hidden max-xl:hidden max-md:block dark:block"
@@ -127,7 +133,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-2.jpg"
+                    src="/assets/images/avatars/avatar-2.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -147,7 +155,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-5.jpg"
+                    src="/assets/images/avatars/avatar-5.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -205,7 +215,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-3.jpg"
+                    src="/assets/images/avatars/avatar-3.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -226,7 +238,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-7.jpg"
+                    src="/assets/images/avatars/avatar-7.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -246,7 +260,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-4.jpg"
+                    src="/assets/images/avatars/avatar-4.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -334,7 +350,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-2.jpg"
+                    src="/assets/images/avatars/avatar-2.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -354,7 +372,9 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <Image
-                    src="assets/images/avatars/avatar-5.jpg"
+                    src="/assets/images/avatars/avatar-5.jpg"
+                    width={32} // or any appropriate size
+                    height={32}                    
                     alt=""
                     className="bg-gray-200 rounded-full w-10 h-10"
                   />
@@ -379,7 +399,7 @@ export default function Menu() {
               </div>
             </div>
           </div>
-          <Link href="/nearby" className="max-md:!hidden">
+          <Link href="/nearby" >
             <svg
               id="icon__outline"
               xmlns="http://www.w3.org/2000/svg"
@@ -560,7 +580,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-2.jpg"
+                      src="/assets/images/avatars/avatar-2.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -590,7 +612,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-3.jpg"
+                      src="/assets/images/avatars/avatar-3.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -615,7 +639,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-7.jpg"
+                      src="/assets/images/avatars/avatar-7.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -644,7 +670,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-4.jpg"
+                      src="/assets/images/avatars/avatar-4.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -668,7 +696,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-3.jpg"
+                      src="/assets/images/avatars/avatar-3.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -693,7 +723,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-4.jpg"
+                      src="/assets/images/avatars/avatar-4.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -723,7 +755,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-6.jpg"
+                      src="/assets/images/avatars/avatar-6.jpg"
+                      width={32} // or any appropriate size
+                      height={32}
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -747,7 +781,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-2.jpg"
+                      src="/assets/images/avatars/avatar-2.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -771,7 +807,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-5.jpg"
+                      src="/assets/images/avatars/avatar-5.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
@@ -801,7 +839,9 @@ export default function Menu() {
                   <div className="relative w-12 h-12 shrink-0">
                     {" "}
                     <Image
-                      src="assets/images/avatars/avatar-7.jpg"
+                      src="/assets/images/avatars/avatar-7.jpg"
+                      width={32} // or any appropriate size
+                      height={32}                      
                       alt=""
                       className="object-cover w-full h-full rounded-full"
                     />
