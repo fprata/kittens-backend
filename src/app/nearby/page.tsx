@@ -102,7 +102,7 @@ export default function NearbyPage() {
 
       {/* View modes */}
       {viewMode === 'map' ? (
-        <NearbyMap center={center} users={users} />
+          <NearbyMap center={center} users={users} />
       ) : (
         <ul className="h-full overflow-y-auto p-4 space-y-3 bg-white">
           {users.map((user) => (

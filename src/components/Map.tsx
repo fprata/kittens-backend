@@ -79,25 +79,27 @@ const createKittenIcon = (imageUrl: string, score: string | null, userId: string
 
 
 export default function NearbyMap({ center, users }: Props) {
-  console.log(users)
+  
   return (
-    <MapContainer center={center} zoom={13} className="h-full w-full">
-      <TileLayer
-        attribution='&copy; OpenStreetMap contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+    <div className="w-full h-screen bg-white">
+      <MapContainer center={center} zoom={13} className="h-full w-full">
+        <TileLayer
+          attribution='&copy; OpenStreetMap contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
 
-      {/* Your location marker */}
-      <Marker position={center} icon={blueCircleIcon}>
-      </Marker>
+        {/* Your location marker */}
+        <Marker position={center} icon={blueCircleIcon}>
+        </Marker>
 
-      {/* Nearby users */}
-      {users
-        .filter((u) => u.lat !== undefined && u.lng !== undefined)
-        .map((user) => (
-          <Marker key={user.id} icon={createKittenIcon(user.profile_pic, user.score?.toString(), user.id )} position={[user.lat, user.lng]}>
-          </Marker>
-        ))}
-    </MapContainer>
+        {/* Nearby users */}
+        {users
+          .filter((u) => u.lat !== undefined && u.lng !== undefined)
+          .map((user) => (
+            <Marker key={user.id} icon={createKittenIcon(user.profile_pic, user.score?.toString(), user.id )} position={[user.lat, user.lng]}>
+            </Marker>
+          ))}
+      </MapContainer>
+    </div>
   )
 }
