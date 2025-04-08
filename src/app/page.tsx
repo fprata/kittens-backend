@@ -1,6 +1,6 @@
-import Image from "next/image";
+//import Image from "next/image";
 
-import { IoChevronBack, IoChevronForward, IoCamera, IoEllipsisHorizontal, IoBookmarkOutline, IoNotificationsOffOutline, IoFlagOutline, IoShareOutline, IoStopCircleOutline, IoHeart, IoChatbubbleEllipses, IoPaperPlaneOutline, IoChevronDownOutline, IoSyncOutline, IoShare } from 'react-icons/io5'
+import { IoChevronBack, IoChevronForward, IoCamera, IoEllipsisHorizontal, IoBookmarkOutline, IoNotificationsOffOutline, IoFlagOutline, IoShareOutline, IoStopCircleOutline, IoHeart, IoChatbubbleEllipses, IoPaperPlaneOutline, IoChevronDownOutline, IoSyncOutline } from 'react-icons/io5'
 
 
 export default function Home() {
