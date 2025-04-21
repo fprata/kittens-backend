@@ -1,15 +1,12 @@
 import { NearbyUser, ProfilePic } from "@/types/NearbyUser";
-import Image from "next/image";
+
 import {
   IoEllipsisHorizontal,
   IoBookmarkOutline,
-  IoNotificationsOffOutline,
   IoFlagOutline,
   IoShareOutline,
   IoStopCircleOutline,
-  IoHeart,
   IoChatbubbleEllipses,
-  IoAddCircle,
   IoHeartCircle,
   IoChevronForwardOutline,
   IoChatbubbleEllipsesOutline,
@@ -22,14 +19,15 @@ import {
   IoChevronForward,
 } from "react-icons/io5";
 import { createClient } from "@supabase/supabase-js";
-import { Key } from "react";
+
+import ResponsiveImage from "../ui/ResponsiveImage";
 
 const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
   
-  export async function getServerSideProps(context: { params: { id: any; }; }) {
+  export async function getServerSideProps(context: { params: { id: string; }; }) {
     const { id } = context.params;
   
     console.log('Start query');
@@ -49,8 +47,10 @@ const supabase = createClient(
       .from("profile_pics")
       .select("url")
       .eq("profile_id", id);
-  
-      console.log({ profilePics });
+    if (picsError || !profilePics) {
+        return { notFound: true };
+    }
+    console.log({ profilePics });
     return {
       props: {
         user: {
@@ -73,7 +73,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
           <div className="flex md:gap-16 gap-4 max-md:flex-col">
             <div className="relative md:p-1 rounded-full h-full max-md:w-16 bg-gradient-to-tr from-pink-400 to-pink-600 shadow-md hover:scale-110 duration-500 uk-animation-scale-up">
               <div className="relative md:w-40 md:h-40 h-16 w-16 rounded-full overflow-hidden md:border-[6px] border-gray-100 shrink-0 dark:border-slate-900">
-                <img
+                <ResponsiveImage
                   src={user.profile_pic}
                   alt=""
                   className="w-full h-full absolute object-cover"
@@ -285,10 +285,9 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <a href={pic.url} data-caption={`Highlight ${index + 1}`}>
                       <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                         <div className="w-full lg:h-64 aspect-[2.5/4] relative">
-                          <Image
+                          <ResponsiveImage
                             src={pic.url}
                             alt={`Highlight ${index + 1}`}
-                            fill
                             className="rounded-lg object-cover w-full h-full"
                           />
                         </div>
@@ -341,7 +340,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-1.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -366,7 +365,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-2.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -392,7 +391,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-3.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -419,7 +418,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-4.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -445,7 +444,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-5.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -471,7 +470,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-4.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -497,7 +496,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-1.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -523,7 +522,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-3.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -549,7 +548,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-1.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -575,7 +574,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-3.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -601,7 +600,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-2.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -627,7 +626,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                     <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                       <div className="relative overflow-hidden rounded-lg uk-transition-toggle">
                         <div className="relative w-full lg:h-60 h-full aspect-[3/3]">
-                          <img
+                          <ResponsiveImage
                             src="/assets/images/post/post-4.jpg"
                             alt=""
                             className="object-cover w-full h-full"
@@ -674,7 +673,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-1.jpg"
                         alt=""
@@ -693,7 +692,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-2.jpg"
                         alt=""
@@ -712,7 +711,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-3.jpg"
                         alt=""
@@ -731,7 +730,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-4.jpg"
                         alt=""
@@ -750,7 +749,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-3.jpg"
                         alt=""
@@ -769,7 +768,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-4.jpg"
                         alt=""
@@ -788,7 +787,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-5.jpg"
                         alt=""
@@ -807,7 +806,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-1.jpg"
                         alt=""
@@ -826,7 +825,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-1.jpg"
                         alt=""
@@ -845,7 +844,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-2.jpg"
                         alt=""
@@ -864,7 +863,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-3.jpg"
                         alt=""
@@ -883,7 +882,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="lg:hover:scale-105 hover:shadow-lg hover:z-10 duration-500 delay-100">
                   <a href="#">
                     <div className="relative w-full lg:h-[270px] aspect-[2.5/4] overflow-hidden rounded-lg shrink-0">
-                      <img
+                      <ResponsiveImage
                         className="object-cover w-full h-full"
                         src="/assets/images/reels/reels-4.jpg"
                         alt=""
@@ -923,7 +922,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -974,7 +973,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   +
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-1.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -998,7 +997,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1048,7 +1047,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
 
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-2.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1073,7 +1072,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1124,7 +1123,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
 
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-3.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1150,7 +1149,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   +
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-4.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1200,7 +1199,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   </div>
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-4.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1224,7 +1223,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-7.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1275,7 +1274,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
 
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-5.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1300,7 +1299,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1350,7 +1349,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   </div>
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-1.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1375,7 +1374,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1426,7 +1425,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
 
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-2.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1451,7 +1450,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1501,7 +1500,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   </div>
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-3.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"
@@ -1526,7 +1525,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                 <div className="relative lg:rounded-xl rounded-md overflow-hidden shadow bg-white dark:bg-dark2">
                   <div className="flex items-center gap-3 sm:px-4 py-3 p-2 text-sm font-normal">
                     <a href="profile.html" className="max-md:hidden">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-4.jpg"
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -1576,7 +1575,7 @@ export default function Profile({ user, profilePics }: { user: NearbyUser, profi
                   </div>
                   <a href="#preview_modal" uk-toggle="">
                     <div className="relative w-full h-48">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/post/post-4.jpg"
                         alt=""
                         className="w-full h-full object-cover inset-0"

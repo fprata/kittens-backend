@@ -10,13 +10,14 @@ import {
     IoPaperPlaneOutline,
     IoChevronDownOutline,
   } from 'react-icons/io5'
+  import ResponsiveImage from '../ui/ResponsiveImage'
   
   export default function Card() {
     return (
       <div className="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
         <div className="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
           <a href="profile.html">
-            <img
+            <ResponsiveImage
               src="/assets/images/avatars/avatar-3.jpg"
               alt=""
               className="w-9 h-9 rounded-full"
@@ -68,7 +69,7 @@ import {
         </div>
   
         <div className="relative w-full lg:h-72 h-full sm:px-4">
-          <img
+          <ResponsiveImage
             src="/assets/images/avatars/avatar-lg-4.jpg"
             alt=""
             className="sm:rounded-lg w-full h-full object-cover"
@@ -99,7 +100,7 @@ import {
         <div className="sm:p-4 p-2.5 border-t border-gray-100 font-normal space-y-3 relative dark:border-slate-700/40">
           <div className="flex items-start gap-3 relative">
             <a href="profile.html">
-              <img src="/assets/images/avatars/avatar-2.jpg" alt="" className="w-6 h-6 mt-1 rounded-full" />
+              <ResponsiveImage src="/assets/images/avatars/avatar-2.jpg" alt="" className="w-6 h-6 mt-1 rounded-full" />
             </a>
             <div className="flex-1">
               <a href="profile.html" className="text-black font-medium inline-block dark:text-white">
@@ -110,7 +111,7 @@ import {
           </div>
           <div className="flex items-start gap-3 relative">
             <a href="profile.html">
-              <img src="/assets/images/avatars/avatar-3.jpg" alt="" className="w-6 h-6 mt-1 rounded-full" />
+              <ResponsiveImage src="/assets/images/avatars/avatar-3.jpg" alt="" className="w-6 h-6 mt-1 rounded-full" />
             </a>
             <div className="flex-1">
               <a href="profile.html" className="text-black font-medium inline-block dark:text-white">
@@ -126,7 +127,7 @@ import {
         </div>
   
         <div className="sm:px-4 sm:py-3 p-2.5 border-t border-gray-100 flex items-center gap-1 dark:border-slate-700/40">
-          <img src="/assets/images/avatars/avatar-7.jpg" alt="" className="w-6 h-6 rounded-full" />
+          <ResponsiveImage src="/assets/images/avatars/avatar-7.jpg" alt="" className="w-6 h-6 rounded-full" />
           <div className="flex-1 relative overflow-hidden h-10">
             <textarea
               placeholder="Add Comment...."

@@ -5,13 +5,14 @@ import { useParams, useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import Profile from '@/components/app/Profile'
+import { ProfilePic } from '@/types/NearbyUser'
 
 export default function UserDetailPage() {
   const { id } = useParams()
   const router = useRouter()
 
   const [user, setUser] = useState(null)
-  const [profilePics, setProfilePics] = useState([])
+  const [profilePics, setProfilePics] = useState<ProfilePic[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

@@ -7,6 +7,7 @@ import {
   IoSyncOutline,
 } from "react-icons/io5";
 import Card from '@/components/app/Card'
+import ResponsiveImage from "@/components/ui/ResponsiveImage";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -53,7 +54,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -67,7 +68,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -81,7 +82,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-6.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -95,7 +96,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-7.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -109,7 +110,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -123,7 +124,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -137,7 +138,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -151,7 +152,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-6.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -165,7 +166,7 @@ export default function Home() {
                     data-caption="Caption 1"
                   >
                     <div className="md:w-20 md:h-20 w-12 h-12 relative md:border-4 border-2 shadow border-white rounded-full overflow-hidden dark:border-slate-700">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-7.jpg"
                         alt=""
                         className="absolute w-full h-full object-cover"
@@ -302,7 +303,7 @@ export default function Home() {
                 <div className="space-y-4 capitalize text-xs font-normal mt-5 mb-2 text-gray-500 dark:text-white/80">
                   <div className="flex items-center gap-3">
                     <a href="profile.html">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-7.jpg"
                         alt=""
                         className="bg-gray-200 rounded-full w-10 h-10"
@@ -327,7 +328,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <a href="profile.html">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="bg-gray-200 rounded-full w-10 h-10"
@@ -352,7 +353,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <a href="profile.html">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="bg-gray-200 rounded-full w-10 h-10"
@@ -377,7 +378,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <a href="profile.html">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="bg-gray-200 rounded-full w-10 h-10"
@@ -402,7 +403,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <a href="profile.html">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-4.jpg"
                         alt=""
                         className="bg-gray-200 rounded-full w-10 h-10"
@@ -446,7 +447,7 @@ export default function Home() {
                         <a href="#">
                           <div className="relative overflow-hidden rounded-lg">
                             <div className="relative w-full md:h-40 h-full">
-                              <img
+                              <ResponsiveImage
                                 src="/assets/images/product/product-3.jpg"
                                 alt=""
                                 className="object-cover w-full h-full inset-0"
@@ -464,7 +465,7 @@ export default function Home() {
                         <a href="#">
                           <div className="relative overflow-hidden rounded-lg">
                             <div className="relative w-full md:h-40 h-full">
-                              <img
+                              <ResponsiveImage
                                 src="/assets/images/product/product-1.jpg"
                                 alt=""
                                 className="object-cover w-full h-full inset-0"
@@ -482,7 +483,7 @@ export default function Home() {
                         <a href="#">
                           <div className="relative overflow-hidden rounded-lg">
                             <div className="relative w-full md:h-40 h-full">
-                              <img
+                              <ResponsiveImage
                                 src="/assets/images/product/product-5.jpg"
                                 alt=""
                                 className="object-cover w-full h-full inset-0"
@@ -527,7 +528,7 @@ export default function Home() {
                 <div className="grid grid-cols-6 gap-3 mt-4">
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-2.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -537,7 +538,7 @@ export default function Home() {
                   </a>
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-3.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -547,7 +548,7 @@ export default function Home() {
                   </a>
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-4.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -557,7 +558,7 @@ export default function Home() {
                   </a>
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-5.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -567,7 +568,7 @@ export default function Home() {
                   </a>
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-6.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -577,7 +578,7 @@ export default function Home() {
                   </a>
                   <a href="profile.html">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <ResponsiveImage
                         src="/assets/images/avatars/avatar-7.jpg"
                         alt=""
                         className="w-full h-full absolute inset-0 rounded-full"
@@ -604,7 +605,7 @@ export default function Home() {
                           <div className="flex flex-col items-center shadow-sm p-2 rounded-xl border1">
                             <a href="profile.html">
                               <div className="relative w-16 h-16 mx-auto mt-2">
-                                <img
+                                <ResponsiveImage
                                   src="/assets/images/avatars/avatar-5.jpg"
                                   alt=""
                                   className="h-full object-cover rounded-full shadow w-full"
@@ -638,7 +639,7 @@ export default function Home() {
                         <div className="flex flex-col items-center shadow-sm p-2 rounded-xl border1">
                           <a href="profile.html">
                             <div className="relative w-16 h-16 mx-auto mt-2">
-                              <img
+                              <ResponsiveImage
                                 src="/assets/images/avatars/avatar-4.jpg"
                                 alt=""
                                 className="h-full object-cover rounded-full shadow w-full"
@@ -671,7 +672,7 @@ export default function Home() {
                         <div className="flex flex-col items-center shadow-sm p-2 rounded-xl border1">
                           <a href="profile.html">
                             <div className="relative w-16 h-16 mx-auto mt-2">
-                              <img
+                              <ResponsiveImage
                                 src="/assets/images/avatars/avatar-4.jpg"
                                 alt=""
                                 className="h-full object-cover rounded-full shadow w-full"
