@@ -3,6 +3,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Inter } from "next/font/google"
 import Menu from "@/components/Menu"
+import UIkitLoader from '@/components/UiKitLoader'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} flex bg-background text-foreground`}>
+        <script src="assets/js/script.js" async></script>        
+        <UIkitLoader/>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Menu />
+          
           <main className="flex-1 min-h-screen">{children}</main>
         </ThemeProvider>
       </body>
