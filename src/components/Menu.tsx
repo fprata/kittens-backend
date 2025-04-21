@@ -141,12 +141,12 @@ export default function Menu() {
                   />
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Johnson smith{" "}
+                      
+                      Johnson smith
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Suggested For You{" "}
+                      
+                      Suggested For You
                     </div>
                   </div>
                 </Link>
@@ -163,20 +163,20 @@ export default function Menu() {
                   />
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      James Lewis{" "}
+                      
+                      James Lewis
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Followed By Johnson{" "}
+                      
+                      Followed By Johnson
                     </div>
                   </div>
                   <button
                     type="button"
                     className="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery"
                   >
-                    {" "}
-                    Follow{" "}
+                    
+                    Follow
                   </button>
                 </Link>
 
@@ -200,12 +200,12 @@ export default function Menu() {
                   </svg>
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      artificial intelligence{" "}
+                      
+                      artificial intelligence
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      13,352K post{" "}
+                      
+                      13,352K post
                     </div>
                   </div>
                 </Link>
@@ -223,12 +223,12 @@ export default function Menu() {
                   />
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Monroe Parker{" "}
+                      
+                      Monroe Parker
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Parker . following{" "}
+                      
+                      Parker . following
                     </div>
                   </div>
                 </Link>
@@ -246,12 +246,12 @@ export default function Menu() {
                   />
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Johnson smith{" "}
+                      
+                      Johnson smith
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Suggested For You{" "}
+                      
+                      Suggested For You
                     </div>
                   </div>
                 </Link>
@@ -268,20 +268,20 @@ export default function Menu() {
                   />
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      James Lewis{" "}
+                      
+                      James Lewis
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Followed By Johnson{" "}
+                      
+                      Followed By Johnson
                     </div>
                   </div>
                   <button
                     type="button"
                     className="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery"
                   >
-                    {" "}
-                    Follow{" "}
+                    
+                    Follow
                   </button>
                 </Link>
 
@@ -305,12 +305,12 @@ export default function Menu() {
                   </svg>
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Ui Designers{" "}
+                      
+                      Ui Designers
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      9,362K post{" "}
+                      
+                      9,362K post
                     </div>
                   </div>
                 </Link>
@@ -335,12 +335,12 @@ export default function Menu() {
                   </svg>
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Affiliate marketing{" "}
+                      
+                      Affiliate marketing
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      4,248K post{" "}
+                      
+                      4,248K post
                     </div>
                   </div>
                 </Link>
@@ -358,12 +358,12 @@ export default function Menu() {
                   />
                   <div className="fldex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      Johnson smith{" "}
+                      
+                      Johnson smith
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Suggested For You{" "}
+                      
+                      Suggested For You
                     </div>
                   </div>
                 </Link>
@@ -380,20 +380,20 @@ export default function Menu() {
                   />
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium text-sm text-black dark:text-white">
-                      {" "}
-                      James Lewis{" "}
+                      
+                      James Lewis
                     </h4>
                     <div className="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
-                      {" "}
-                      Followed By Johnson{" "}
+                      
+                      Followed By Johnson
                     </div>
                   </div>
                   <button
                     type="button"
                     className="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery"
                   >
-                    {" "}
-                    Follow{" "}
+                    
+                    Follow
                   </button>
                 </Link>
               </div>
@@ -578,7 +578,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-2.jpg"
                       width={32} // or any appropriate size
@@ -589,13 +589,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> John Michael</b> who you
                       might know, is on Instello.
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      2 hours ago{" "}
+                      
+                      2 hours ago
                     </div>
                   </div>
                   <button
@@ -610,7 +610,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery bg-teal-500/5"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-3.jpg"
                       width={32} // or any appropriate size
@@ -621,13 +621,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Alexa Gray</b> started
-                      following you. Welcome him to your profile. 👋{" "}
+                      following you. Welcome him to your profile. 👋
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      4 hours ago{" "}
+                      
+                      4 hours ago
                     </div>
                     <div className="w-2.5 h-2.5 bg-teal-600 rounded-full absolute right-3 top-5"></div>
                   </div>
@@ -637,7 +637,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-7.jpg"
                       width={32} // or any appropriate size
@@ -648,13 +648,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1">Jesse Steeve</b> mentioned
-                      you in a story. Check it out and reply. 📣{" "}
+                      you in a story. Check it out and reply. 📣
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                 </Link>
@@ -668,7 +668,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-4.jpg"
                       width={32} // or any appropriate size
@@ -679,13 +679,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Jesse Steeve</b> sarah
-                      tagged you <br /> in a photo of your birthday party. 📸{" "}
+                      tagged you <br /> in a photo of your birthday party. 📸
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                 </Link>
@@ -694,7 +694,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery bg-teal-500/5"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-3.jpg"
                       width={32} // or any appropriate size
@@ -705,13 +705,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Sarah Gray</b> sent you a
-                      message. He wants to chat with you. 💖{" "}
+                      message. He wants to chat with you. 💖
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      4 hours ago{" "}
+                      
+                      4 hours ago
                     </div>
                     <div className="w-2.5 h-2.5 bg-teal-600 rounded-full absolute right-3 top-5"></div>
                   </div>
@@ -721,7 +721,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-4.jpg"
                       width={32} // or any appropriate size
@@ -732,13 +732,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> James Lewis</b> Start
-                      following you on instello{" "}
+                      following you on instello
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                   <button
@@ -753,7 +753,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-6.jpg"
                       width={32} // or any appropriate size
@@ -764,13 +764,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Alexa stella</b> commented
-                      on your photo “Wow, stunning shot!” 💬{" "}
+                      on your photo “Wow, stunning shot!” 💬
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                 </Link>
@@ -779,7 +779,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-2.jpg"
                       width={32} // or any appropriate size
@@ -790,13 +790,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> John Michael</b> mentioned
-                      you in a story. Check it out and reply. 📣{" "}
+                      you in a story. Check it out and reply. 📣
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                 </Link>
@@ -805,7 +805,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-5.jpg"
                       width={32} // or any appropriate size
@@ -816,13 +816,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Jesse Steeve</b> who you
-                      might know, is on Instello.{" "}
+                      might know, is on Instello.
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                   <button
@@ -837,7 +837,7 @@ export default function Menu() {
                   className="relative flex items-center gap-3 p-2 duration-200 rounded-xl pr-10 hover:bg-secondery"
                 >
                   <div className="relative w-12 h-12 shrink-0">
-                    {" "}
+                    
                     <Image
                       src="/assets/images/avatars/avatar-7.jpg"
                       width={32} // or any appropriate size
@@ -848,13 +848,13 @@ export default function Menu() {
                   </div>
                   <div className="flex-1 ">
                     <p>
-                      {" "}
+                      
                       <b className="font-bold mr-1"> Martin Gray</b> liked your
-                      photo of the Eiffel Tower. 😍{" "}
+                      photo of the Eiffel Tower. 😍
                     </p>
                     <div className="text-xs text-gray-500 mt-1.5 dark:text-white/80">
-                      {" "}
-                      8 hours ago{" "}
+                      
+                      8 hours ago
                     </div>
                   </div>
                 </Link>

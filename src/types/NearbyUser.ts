@@ -8,3 +8,10 @@ export type NearbyUser = {
     profile_pic: string,
     score: number
   }
+
+export type ProfilePic = {
+    id: string
+    profile_id: string
+    url: string
+    
+  }

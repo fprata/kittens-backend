@@ -8,17 +8,9 @@ export default function UIkitLoader() {
     const uikitScript = document.createElement('script')
     uikitScript.src = '/assets/js/uikit.min.js'
     uikitScript.async = true
-
-    const iconsScript = document.createElement('script')
-    iconsScript.src = '/assets/js/uikit-icons.min.js'
-    iconsScript.async = true
-
     document.body.appendChild(uikitScript)
-    document.body.appendChild(iconsScript)
-
     return () => {
       document.body.removeChild(uikitScript)
-      document.body.removeChild(iconsScript)
     }
   }, [])
 

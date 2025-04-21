@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} flex bg-background text-foreground`}>
-        <script src="assets/js/script.js" async></script>        
+             
         <UIkitLoader/>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Menu />
