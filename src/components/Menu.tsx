@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import ResponsiveImage from "./ui/ResponsiveImage";
+
 
 export default function Menu() {
   return (
